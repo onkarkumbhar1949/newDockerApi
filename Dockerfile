@@ -1,3 +1,4 @@
-FROM openjdk:13-jdk-alpine
-ADD target/helloapp.jar helloapp.jar
-ENTRYPOINT ["java","jar","helloapp.jar"]
+FROM openjdk:11-jdk-alpine
+ADD target/demo.springboot-1.0.0 jar demo.springboot-1.0.0.jar
+ENTRYPOINT ["java","jar","demo.springboot-1.0.0.jar"]
+EXPOSE 9090
